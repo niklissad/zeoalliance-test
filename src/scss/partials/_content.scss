@@ -1,0 +1,96 @@
+// Colors
+$tC: #3d424d;
+$cG1: #d7deea;
+$cG2: #8b93a3;
+$cR: #ff3b30;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('../img/back.jpg') no-repeat center;
+  background-size: cover;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: $tC;
+}
+
+#content {
+  padding: 10px;
+}
+
+.bBtn {
+  position: relative;
+  background: transparent;
+  color: $cG2;
+  font-size: rem-calc(18px);
+  font-weight: 500;
+  border: 2px solid $cG1;
+  border-radius: 4px;
+  width: rem-calc(210px);
+  padding: rem-calc(10px) rem-calc(10px);
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease;
+  &:hover {
+    background: lighten($cG1, 7);
+  }
+  &:active {
+    background: lighten($cG1, 4);
+  }
+  &:focus {
+    outline: none;
+  }
+  &+.bBtn {
+    margin-left: rem-calc(20px);
+    @media all and (max-width: 519px) {
+      margin-right: rem-calc(20px);
+      margin-top: rem-calc(20px);
+    }
+  }
+
+  &.mAccept {
+    color: #fff;
+    background: $cR;
+    border-color: $cR;
+    box-shadow: 0 2px 0 darken($cR, 20);
+    padding-bottom: rem-calc(8px);
+    &:hover {
+      background: darken($cR, 10);
+      border-color: darken($cR, 10);
+    }
+    &:active {
+      background: darken($cR, 13);
+      border-color: darken($cR, 13);
+    }
+  }
+
+  &.mTransparent {
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+    &:hover {
+      background: rgba(#fff, .2);
+    }
+    &:active {
+      background: rgba(#fff, .3);
+    }
+  }
+
+}
+
+#content {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
