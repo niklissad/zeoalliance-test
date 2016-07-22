@@ -1,0 +1,6 @@
+{
+  "name": "Zeoalliance-test",
+  "tagline": "Zeoalliance Test Task",
+  "body": "# zeoalliance-test\r\nZeoalliance Test Task\r\nAll compiled files is located in /dist\r\n\r\n## For development\r\n```\r\nnpm install\r\n```\r\n\r\n## Default Gulp task - compile all files to /dist and serve files via BrowserSync\r\n```\r\ngulp\r\n```",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
